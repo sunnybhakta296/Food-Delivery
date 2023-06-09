@@ -1,0 +1,34 @@
+export interface VendorLoginInput {
+  email: string;
+  password: string;
+}
+
+export interface VendorPayload {
+  _id: string;
+  email: string;
+  name: string;
+}
+
+export interface EditVendorPayload {
+  name: string;
+  address: string;
+  phone: string;
+  foodType: [string];
+}
+
+export interface CreateOfferInputs {
+  offerType: string;
+  vendors: [any];
+  title: string;
+  description: string;
+  minValue: number;
+  offerAmount: number;
+  startValidity: Date;
+  endValidity: Date;
+  promocode: string;
+  promoType: string;
+  bank: [any];
+  bins: [any];
+  pincode: string;
+  isActive: boolean;
+}

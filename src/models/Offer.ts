@@ -34,5 +34,5 @@ const OfferSchema = new Schema({
   isActive: Boolean,
 });
 
-const Offer = mongoose.model<OfferDoc>("order", OfferSchema);
+const Offer = mongoose.model<OfferDoc>("offer", OfferSchema);
 export { Offer };
